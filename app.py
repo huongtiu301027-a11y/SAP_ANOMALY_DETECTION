@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 # =========================
 
 st.title("PHÁT HIỆN BẤT THƯỜNG TRONG DỮ LIỆU SAP ERP")
-st.caption("Isolation Forest + Streamlit")
+st.caption("Ứng dụng sử dụng Isolation Forest + Streamlit")
 
 # =========================
 # ĐỌC FILE DỮ LIỆU
