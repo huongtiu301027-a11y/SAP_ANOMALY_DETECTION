@@ -128,7 +128,7 @@ st.pyplot(fig)
 
 csv = anomalies.to_csv(index=False).encode("utf-8")
 
-st.download_button(
+st.download_button
     label="Tải dữ liệu bất thường",
     data=csv,
     file_name="anomaly_result.csv",
