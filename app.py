@@ -10,15 +10,15 @@ import matplotlib.pyplot as plt
 # =========================
 
 st.title("PHÁT HIỆN BẤT THƯỜNG TRONG DỮ LIỆU SAP ERP")
-st.subheader("Isolation Forest + Streamlit")
+st.caption("Isolation Forest + Streamlit")
 
 # =========================
-# ĐỌC DỮ LIỆU
+# ĐỌC FILE DỮ LIỆU
 # =========================
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("sap_data.csv")
+    data = pd.read_csv("sap_data.csv")
     return df
 
 df = load_data()
@@ -128,7 +128,7 @@ st.pyplot(fig)
 
 csv = anomalies.to_csv(index=False).encode("utf-8")
 
-st.download_button
+st.download_button(
     label="Tải dữ liệu bất thường",
     data=csv,
     file_name="anomaly_result.csv",
