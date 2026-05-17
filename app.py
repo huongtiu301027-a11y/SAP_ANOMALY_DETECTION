@@ -10,16 +10,16 @@ import matplotlib.pyplot as plt
 # =========================
 
 st.title("PHÁT HIỆN BẤT THƯỜNG TRONG DỮ LIỆU SAP ERP")
-st.caption("Ứng dụng sử dụng Isolation Forest + Streamlit")
+st.caption("Isolation Forest + Streamlit")
 
 # =========================
-# ĐỌC FILE DỮ LIỆU
+# ĐỌC DỮ LIỆU
 # =========================
 
 @st.cache_data
 def load_data():
-    data = pd.read_csv("sap_data.csv")
-    return df
+    data= pd.read_csv("sap_data.csv")
+    return data
 
 df = load_data()
 
